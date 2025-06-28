@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --too-far: red;
+    --far: #CC3300;
+    --not-far: #996600;
+    --close: #669900;
+    --very-close: #33CC00;
+    --correct: green;
+}
+li{
+    list-style: none;
+}
+.main-container{
+    background: linear-gradient(25deg, black, rgb(95, 106, 249), black);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 95px;
+    align-items: center;
+    padding: 50px;
+    position: relative;
+}
+.attempts-num{
+    display: flex;
+    gap: 10px;
+}
+.attempts-num li {
+    width: 40px;
+    height: 40px;
+    border: white solid;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.attempts-num li span{
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    display: inline-block;
+}
+.guess-inp{
+    width: 300px;
+    height: 35px;
+    font-size: 22px;
+    outline: none;
+    padding: 0 10px;
+    border: none;
+    border-radius: 5px;
+}
+.guess-btn{
+    width: auto;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 22px;
+    cursor: pointer;
+    outline: none;
+}
+.guess-btn:hover{
+    background: rgb(186, 186, 186);
+}
+.guess-btn:active{
+    transform: scale(0.98);
+}
+.guess-form{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.inform-box{
+    border: 5px solid;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border-radius: 20px;
+    border-color: white;
+    display: none;
+}
+.inform-bar{
+    font-size: 48px;
+    color: #33CC00;
+}
+.restart-btn{
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 22px;
+    outline: none;
+}
+.restart-btn:hover{
+    background: rgb(186, 186, 186);
+}
+.restart-btn:active{
+    transform: scale(0.98);
+}
+
+.instructions{
+    position: absolute;
+    top: 20px;
+    right: 50px;
+}
+.bar-img{
+    font-size: 30px;
+    color: white;
+    margin-left: 300px;
+    cursor: pointer;
+}
+.menu-bar{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+    display: none;
+}
+.menu-bar div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.menu-bar div span{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    border-radius: 4px;
+}
+.menu-bar div:first-child span{
+    background: red;
+}
+.menu-bar div:nth-child(2) span{
+    background: var(--far);
+}
+.menu-bar div:nth-child(3) span{
+    background: var(--not-far);
+}
+.menu-bar div:nth-child(4) span{
+    background: var(--close);
+}
+.menu-bar div:nth-child(5) span{
+    background: var(--very-close);
+}
+.menu-bar div:last-child span{
+    background: green;
+}

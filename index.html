@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="instructions">
+            <span class="bar-img" onclick="menuDisplay()">☰</span>
+            <div class="menu-bar">
+                <div><span></span> - Too far (difference is higher than 40)</div>
+                <div><span></span> - Far (difference is higher than 25)</div>
+                <div><span></span> - Not far (difference is higher than 15)</div>
+                <div><span></span> - Close (difference is higher than 5)</div>
+                <div><span></span> - Very close (difference is higher than 1)</div>
+                <div><span></span> - Correct (the exact number)</div>
+            </div>
+        </div>
+        <ul class="attempts-num">
+            <li><span class="span-1"></span></li>
+            <li><span class="span-2"></span></li>
+            <li><span class="span-3"></span></li>
+            <li><span class="span-4"></span></li>
+            <li><span class="span-5"></span></li>
+            <li><span class="span-6"></span></li>
+            <li><span class="span-7"></span></li>
+            <li><span class="span-8"></span></li>
+            <li><span class="span-9"></span></li>
+            <li><span class="span-10"></span></li>
+        </ul>
+        <div class="guess-area">
+            <form class="guess-form">
+                <input type="number" class="guess-inp">
+                <button class="guess-btn">Guess</button>
+            </form>
+        </div>
+        <div class="inform-box">
+            <h1 class="inform-text">Congratulation, You won!</h1>
+            <button class="restart-btn" onclick="restartEverything()">Restart</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

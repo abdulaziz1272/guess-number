@@ -25,6 +25,7 @@ li{
     padding: 50px;
     position: relative;
 }
+
 .attempts-num{
     display: flex;
     gap: 10px;

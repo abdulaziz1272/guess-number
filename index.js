@@ -107,6 +107,7 @@ function restartEverything(){
     informBox.style.display = "none"
     valid = true;
     attemptCount = 0;
+    correctAnswer = Math.floor(Math.random() * 100);
     
     for(let i = 1; i < 11; i++){
         const spanAll = document.querySelector(`.span-${i}`);

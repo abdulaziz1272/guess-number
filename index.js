@@ -22,7 +22,7 @@ function startGuess(num, cor) {
             dif = cor - num;
         }
 
-        if(Number(guessInput.value) > 100){
+        if(Number(guessInput.value) > 100 || Number(guessInput.value) < 0){
             alert("Please, Enter numbers between 0 and 100!");
         }
 

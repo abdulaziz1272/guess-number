@@ -115,5 +115,10 @@ function restartEverything(){
         listAll.style.background = "transparent";
     }
 }
-
+document.addEventListener("keydown", function(event){
+    if(event.key == "r" || event.key == "R"){
+        event.preventDefault;
+        restartEverything()
+    }
+})
 // restart function

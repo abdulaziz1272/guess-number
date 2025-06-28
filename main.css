@@ -71,6 +71,7 @@ li{
 .guess-btn:hover{
     background: rgb(186, 186, 186);
 }
+
 .guess-btn:active{
     transform: scale(0.98);
 }

@@ -1,5 +1,6 @@
 const guessInput = document.querySelector(".guess-inp");
 const guessForm = document.querySelector(".guess-form");
+const rightAnswer = document.querySelector(".right-answer")
 let attemptCount = 0;
 let correctAnswer = Math.floor(Math.random() * 100);
 
@@ -52,6 +53,7 @@ function startGuess(num, cor) {
             spanEl.style.transform = "rotate(0deg)";
             list.style.background = "green";
             informDisplay("Congratulation, You won!", "#33CC00");
+            rightAnswer.innerHTML = correctAnswer;
             valid = false;
         }
     }
@@ -94,6 +96,7 @@ function informDisplay(text, color){
     const informText = document.querySelector(".inform-text");
     informText.textContent = text;
     informText.style.color = color;
+    rightAnswer.innerHTML = correctAnswer;
 
     informBox.style.display = "flex"
 }
@@ -108,7 +111,7 @@ function restartEverything(){
     valid = true;
     attemptCount = 0;
     correctAnswer = Math.floor(Math.random() * 100);
-    
+
     for(let i = 1; i < 11; i++){
         const spanAll = document.querySelector(`.span-${i}`);
         const listAll = spanAll.parentElement;

@@ -67,6 +67,7 @@ li{
     cursor: pointer;
     outline: none;
 }
+
 .guess-btn:hover{
     background: rgb(186, 186, 186);
 }
